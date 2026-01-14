@@ -6,6 +6,66 @@
 <title>Campanha Solidária</title>
 
 <style>
+  .outras-campanhas {
+  background: #f4f4f4;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.outras-campanhas h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+.campanhas-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.campanha-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.campanha-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.campanha-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.campanha-card h3 {
+  padding: 15px 15px 5px;
+  font-size: 18px;
+}
+
+.campanha-card p {
+  padding: 0 15px 15px;
+  font-size: 14px;
+}
+
+.campanha-card span {
+  display: block;
+  background: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -241,6 +301,35 @@ footer h3 {
     ✔️ Transparência total<br>
     ✔️ Doações via PIX<br>
     ✔️ Relatos reais
+    <section class="outras-campanhas">
+  <h2>Outras campanhas que você pode ajudar</h2>
+
+  <div class="campanhas-grid">
+
+    <a href="#" class="campanha-card">
+      <img src="campanha-idosos.jpg" alt="Casa de idosos">
+      <h3>Casa de Idosos Esperança</h3>
+      <p>Ajudamos idosos em situação de abandono com alimentação e cuidados.</p>
+      <span>Ver campanha</span>
+    </a>
+
+    <a href="#" class="campanha-card">
+      <img src="campanha-familia1.jpg" alt="Família carente">
+      <h3>Família em extrema pobreza</h3>
+      <p>Família com crianças precisando de alimentos e moradia digna.</p>
+      <span>Ver campanha</span>
+    </a>
+
+    <a href="#" class="campanha-card">
+      <img src="campanha-criancas.jpg" alt="Crianças">
+      <h3>Apoio a crianças carentes</h3>
+      <p>Doações para alimentação, roupas e material escolar.</p>
+      <span>Ver campanha</span>
+    </a>
+
+  </div>
+</section>
+
   </p>
 </footer>
 
@@ -279,3 +368,4 @@ function closeModal() {
 
 </body>
 </html>
+
